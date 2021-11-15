@@ -6,10 +6,6 @@ def _top(num, lst):
 
 
 def _highest_matching_groups(num_matching, dice):
-    score_matching = []
-    for k, v in Counter(dice).items():
-        if v == num_matching:
-            score_matching.append(k * num_matching)
     score_matching = [k * num_matching for k, v in Counter(dice).items() if v == num_matching]
     return list(reversed(sorted(score_matching)))
 
