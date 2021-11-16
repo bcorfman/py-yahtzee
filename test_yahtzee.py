@@ -5,16 +5,16 @@ def test_same_number():
     assert 8 == yahtzee.same_number(4, [1, 1, 2, 4, 4])
 
 
-def test_top():
-    assert [8] == yahtzee._top(1, [8, 6])
-    assert [8, 6] == yahtzee._top(2, [8, 6, 4])
-    assert [0, 0] == yahtzee._top(2, [8])
+def test_first():
+    assert [8] == yahtzee._first(1, [8, 6])
+    assert [8, 6] == yahtzee._first(2, [8, 6, 4])
+    assert [0, 0] == yahtzee._first(2, [8])
 
 
-def test_highest_matching_groups():
-    assert list(yahtzee._highest_matching_groups(2, [5, 5, 4, 4, 2])) == [10, 8]
-    assert list(yahtzee._highest_matching_groups(2, [6, 6, 4, 4, 5])) == [12, 8]
-    assert list(yahtzee._highest_matching_groups(2, [5, 4, 3, 2, 1])) == []
+def test_highest_matches_of():
+    assert list(yahtzee._highest_matches_of(2, [5, 5, 4, 4, 2])) == [10, 8]
+    assert list(yahtzee._highest_matches_of(2, [6, 6, 4, 4, 5])) == [12, 8]
+    assert list(yahtzee._highest_matches_of(2, [5, 4, 3, 2, 1])) == []
 
 
 def test_pair():
