@@ -10,7 +10,7 @@ def _highest_matches_of(num_matching, dice):
     return list(reversed(sorted(score_matching)))
 
 
-def _sequence_starting_with(num, dice):
+def _sequence_beginning_with(num, dice):
     sorted_dice = list(sorted(dice))
     straight = list(range(num, num+5))
     return sum(sorted_dice) if sorted_dice == straight else 0
@@ -37,11 +37,11 @@ def four_of_a_kind(dice):
 
 
 def small_straight(dice):
-    return _sequence_starting_with(1, dice)
+    return _sequence_beginning_with(1, dice)
 
 
 def large_straight(dice):
-    return _sequence_starting_with(2, dice)
+    return _sequence_beginning_with(2, dice)
 
 
 def full_house(dice):
