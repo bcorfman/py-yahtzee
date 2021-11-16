@@ -5,10 +5,10 @@ def test_same_number():
     assert 8 == yahtzee.same_number(4, [1, 1, 2, 4, 4])
 
 
-def test_first():
-    assert [8] == yahtzee._first(1, [8, 6])
-    assert [8, 6] == yahtzee._first(2, [8, 6, 4])
-    assert [0, 0] == yahtzee._first(2, [8])
+def test_first_of():
+    assert [8] == yahtzee._first_of(1, [8, 6])
+    assert [8, 6] == yahtzee._first_of(2, [8, 6, 4])
+    assert [0, 0] == yahtzee._first_of(2, [8])
 
 
 def test_highest_matches_of():
