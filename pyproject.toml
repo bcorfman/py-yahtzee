@@ -1,7 +1,7 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "py-yahtzee"
+version = "1.0"
+description = "A solution to the kata at https://codingdojo.org/kata/Yahtzee/"
 authors = [
     {name = "Brandon Corfman", email = "bcorfman@fastmail.fm"},
 ]
